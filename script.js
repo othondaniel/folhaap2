@@ -39,3 +39,47 @@ ${titulo} em ${curso}.`;
 
   doc.save("folha-de-aprovacao.pdf");
 }
+
+const nomeInput = document.getElementById("nome");
+const tituloTrabalho = document.getElementById("tituloTrabalho");
+const tipoSelect = document.getElementById("tipo");
+const apresentadaSelect = document.getElementById("apresentada");
+const campusSelect = document.getElementById("campus");
+const tituloSelect = document.getElementById("titulo");
+const cursoInput = document.getElementById("curso");
+const orientadorInput = document.getElementById("orientador");
+const ex1Input = document.getElementById("ex1");
+const ex2Input = document.getElementById("ex2");
+const dataInput = document.getElementById("data");
+
+document.querySelectorAll("input, select").forEach(el => {
+  el.addEventListener("input", atualizarPreview);
+});
+
+function atualizarPreview() {
+  pNome.textContent =
+    nomeInput.value.toUpperCase() || "NOME DO ALUNO";
+
+  pTitulo.textContent =
+    tituloTrabalho.value.toUpperCase() || "TÍTULO DO TRABALHO";
+
+  pTexto.textContent =
+`${tipoSelect.value} apresentada ao ${apresentadaSelect.value}, do
+${campusSelect.value} da Universidade do Estado do Rio Grande do Norte,
+como requisito parcial para obtenção do título de
+${tituloSelect.value} em ${cursoInput.value}.`;
+
+  pData.textContent =
+    dataInput.value
+      ? "Aprovada em: " + dataInput.value.split("-").reverse().join("/")
+      : "Aprovada em: ___ / ___ / _____";
+
+  pOrientador.textContent =
+    orientadorInput.value + " (Orientador)";
+
+  pEx1.textContent =
+    ex1Input.value + " (Examinador)";
+
+  pEx2.textContent =
+    ex2Input.value + " (Examinador)";
+}
