@@ -122,23 +122,30 @@ button:hover {
   margin-top: 16px;
 }
 
-/* INPUTS */
+/* ===== CAMPOS DE FORMULÁRIO (PADRÃO ÚNICO) ===== */
 .formulario input,
 .formulario select {
   width: 100%;
-  padding: 12px;
-  margin-top: 6px;
-  border-radius: 10px;
+  height: 48px;              /* 🔥 ALTURA FIXA */
+  padding: 0 14px;           /* padding horizontal apenas */
+  border-radius: 12px;
   border: 1px solid #d1d5db;
+
   font-size: 14px;
-  transition: border 0.2s, box-shadow 0.2s;
+  font-family: inherit;
+
+  background: #f9fafb;
+  box-sizing: border-box;    /* 🔥 FUNDAMENTAL */
+  appearance: none;          /* 🔥 padroniza select */
 }
 
+/* FOCO */
 .formulario input:focus,
 .formulario select:focus {
   outline: none;
   border-color: #2563eb;
-  box-shadow: 0 0 0 2px rgba(37,99,235,0.15);
+  box-shadow: 0 0 0 3px rgba(37,99,235,0.15);
+  background: #ffffff;
 }
 
 /* BOTÃO */
