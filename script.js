@@ -48,8 +48,8 @@ ${tituloSelect.value} em ${cursoInput.value || "CURSO"}.`;
       ? "Aprovada em: " + dataInput.value.split("-").reverse().join("/")
       : "Aprovada em: ___ / ___ / _____";
 
-  // ORIENTADOR
-    if (orientadorInput.value) {
+    // ORIENTADOR
+    if (orientadorInput.value.trim()) {
       pOrientador.textContent = orientadorInput.value + " (Orientador)";
       assinaturaOrientador.style.display = "block";
     } else {
@@ -57,7 +57,7 @@ ${tituloSelect.value} em ${cursoInput.value || "CURSO"}.`;
     }
     
     // EXAMINADOR 1
-    if (ex1Input.value) {
+    if (ex1Input.value.trim()) {
       pEx1.textContent = ex1Input.value + " (Examinador)";
       assinaturaEx1.style.display = "block";
     } else {
@@ -65,7 +65,7 @@ ${tituloSelect.value} em ${cursoInput.value || "CURSO"}.`;
     }
     
     // EXAMINADOR 2
-    if (ex2Input.value) {
+    if (ex2Input.value.trim()) {
       pEx2.textContent = ex2Input.value + " (Examinador)";
       assinaturaEx2.style.display = "block";
     } else {
