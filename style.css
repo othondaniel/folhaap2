@@ -13,7 +13,22 @@ html, body {
 .formulario {
   width: 40%;
   padding: 20px;
-  overflow-y: auto;      /* scroll só no formulário */
+  background: #ffffff;   /* 🔥 evita “tudo branco” */
+  overflow-y: auto;
+}
+
+.formulario label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.formulario input,
+.formulario select,
+.formulario button {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
 }
 
 .preview {
