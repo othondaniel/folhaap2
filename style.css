@@ -191,7 +191,7 @@ button:hover {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  width: 65%;
+  width: 80%;
 }
 
 .texto {
@@ -199,7 +199,7 @@ button:hover {
   margin-top: 60px;
 
   /* 🔥 AJUSTE ABNT */
-  width: 70%;              /* texto mais estreito */
+  width: 60%;              /* texto mais estreito */
   margin-left: auto;       /* empurra para a direita */
   margin-right: 0;
 
