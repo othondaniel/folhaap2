@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Gerador de Folha de Aprovação</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Gerador de Folha de Aprovação ABNT</h1>
+
+<form id="form">
+
+  <input type="text" id="nome" placeholder="Nome do aluno" required>
+
+  <input type="text" id="tituloTrabalho" placeholder="Título do trabalho" required>
+
+  <select id="tipo">
+    <option>Dissertação</option>
+    <option>Trabalho de Conclusão de Curso</option>
+  </select>
+
+  <select id="apresentada">
+    <option>Departamento de Letras Estrangeiras</option>
+  </select>
+
+  <select id="campus">
+    <option>Campus Avançado de Assú</option>
+    <option>Campus Avançado de Caicó</option>
+  </select>
+
+  <select id="titulo">
+    <option>Graduado</option>
+    <option>Mestre</option>
+    <option>Doutor</option>
+  </select>
+
+  <input type="text" id="curso" placeholder="Curso" required>
+
+  <input type="text" id="orientador" placeholder="Orientador(a)" required>
+  <input type="text" id="ex1" placeholder="Examinador(a) 1" required>
+  <input type="text" id="ex2" placeholder="Examinador(a) 2" required>
+
+  <input type="date" id="data" required>
+
+  <button type="button" onclick="gerarPDF()">Baixar PDF</button>
+
+</form>
+
+<script src="script.js"></script>
+</body>
+</html>
