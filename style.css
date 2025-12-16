@@ -181,7 +181,7 @@ button:hover {
   box-shadow: 0 0 10px rgba(0,0,0,0.25);
 
   /* 🔥 ZOOM VISUAL */
-  transform: scale(0.8);
+  transform: scale(0.9);
   transform-origin: top left;
 }
 
