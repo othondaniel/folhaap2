@@ -6,10 +6,10 @@ const apresentadaSelect = document.getElementById("apresentada");
 const campusSelect = document.getElementById("campus");
 const tituloSelect = document.getElementById("titulo");
 const cursoInput = document.getElementById("curso");
+const dataInput = document.getElementById("data");
 const orientadorInput = document.getElementById("orientador");
 const ex1Input = document.getElementById("ex1");
 const ex2Input = document.getElementById("ex2");
-const dataInput = document.getElementById("data");
 
 // ===== ELEMENTOS DO PREVIEW =====
 const pNome = document.getElementById("pNome");
