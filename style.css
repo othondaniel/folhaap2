@@ -191,6 +191,12 @@ button:hover {
 .texto {
   text-align: justify;
   margin-top: 60px;
+
+  /* 🔥 AJUSTE ABNT */
+  width: 70%;              /* texto mais estreito */
+  margin-left: auto;       /* empurra para a direita */
+  margin-right: 0;
+
   line-height: 1.5;
 }
 
