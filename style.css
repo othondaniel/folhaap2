@@ -243,22 +243,20 @@ button:hover {
 
 /* BLOCO DE ASSINATURA */
 .assinatura {
-  margin-top: 12mm;
+  margin-top: 15mm;
   text-align: center;
-}
-
-/* NOME DA BANCA */
-.nome-banca {
-  font-size: 12pt;
-  margin-bottom: 6mm;
 }
 
 /* LINHA DE ASSINATURA */
 .linha {
   width: 60%;
-  height: 0;
-  margin: 0 auto;
+  margin: 0 auto 4mm auto;
   border-top: 1px solid #000;
+}
+
+.nome-banca {
+  font-size: 12pt;
+  margin: 0;
 }
 
 
