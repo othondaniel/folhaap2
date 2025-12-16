@@ -241,6 +241,27 @@ button:hover {
   font-size: 12pt;
 }
 
+/* BLOCO DE ASSINATURA */
+.assinatura {
+  margin-top: 12mm;
+  text-align: center;
+}
+
+/* NOME DA BANCA */
+.nome-banca {
+  font-size: 12pt;
+  margin-bottom: 6mm;
+}
+
+/* LINHA DE ASSINATURA */
+.linha {
+  width: 60%;
+  height: 0;
+  margin: 0 auto;
+  border-top: 1px solid #000;
+}
+
+
 @media (max-width: 900px) {
   .container {
     flex-direction: column;
