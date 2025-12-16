@@ -10,38 +10,101 @@ html, body {
   overflow: hidden;      /* evita scroll geral */
 }
 
-.formulario label {
-  display: block;
-  margin-top: 10px;
-  font-weight: bold;
-}
-
-.formulario input,
-.formulario select,
-.formulario button {
-  width: 100%;
-  padding: 8px;
-  margin-top: 5px;
-}
-
 .formulario {
   width: 40%;
-  background: #f5f7fb;
-  padding: 20px;
+  background: linear-gradient(180deg, #f8fafc, #eef2f7);
+  padding: 24px;
   overflow-y: auto;
 }
 
+/* CARD PRINCIPAL */
 .card-form {
   background: #ffffff;
-  border-radius: 16px;
-  padding: 24px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  border-radius: 20px;
+  padding: 28px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.08);
 }
 
+/* TÍTULOS */
 .card-form h2 {
   margin: 0;
-  font-size: 20px;
-  color: #1f2937;
+  font-size: 22px;
+  color: #111827;
+}
+
+.subtitulo {
+  margin-top: 6px;
+  font-size: 14px;
+  color: #6b7280;
+}
+
+/* BLOCOS */
+.bloco {
+  margin-top: 28px;
+}
+
+.bloco h3 {
+  font-size: 14px;
+  font-weight: 700;
+  color: #2563eb;
+  margin-bottom: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+/* LABELS */
+label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #374151;
+}
+
+/* INPUTS */
+input,
+select {
+  width: 100%;
+  padding: 12px 14px;
+  margin-top: 6px;
+  border-radius: 12px;
+  border: 1px solid #d1d5db;
+  font-size: 14px;
+  background: #f9fafb;
+  transition: all 0.2s ease;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+  border-color: #2563eb;
+  background: #ffffff;
+  box-shadow: 0 0 0 3px rgba(37,99,235,0.15);
+}
+
+/* BOTÃO */
+button {
+  margin-top: 32px;
+  width: 100%;
+  padding: 16px;
+  border-radius: 14px;
+  border: none;
+  background: linear-gradient(135deg, #2563eb, #1e40af);
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 28px rgba(37,99,235,0.35);
 }
 
 .subtitulo {
@@ -149,16 +212,9 @@ html, body {
   .formulario,
   .preview {
     width: 100%;
-    height: auto;
   }
 
-  .preview {
-    padding: 10px;
-  }
-
-  .pagina {
-    transform: scale(0.9);
-    transform-origin: top center;
+  .grid {
+    grid-template-columns: 1fr;
   }
 }
-
