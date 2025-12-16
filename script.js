@@ -7,6 +7,11 @@ const campusSelect = document.getElementById("campus");
 const tituloSelect = document.getElementById("titulo");
 const cursoInput = document.getElementById("curso");
 const dataInput = document.getElementById("data");
+
+const orientadorInput = document.getElementById("orientador");
+const ex1Input = document.getElementById("ex1");
+const ex2Input = document.getElementById("ex2");
+
 const assinaturaOrientador = document.getElementById("assinaturaOrientador");
 const assinaturaEx1 = document.getElementById("assinaturaEx1");
 const assinaturaEx2 = document.getElementById("assinaturaEx2");
