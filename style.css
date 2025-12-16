@@ -16,3 +16,54 @@ button {
   border: none;
   cursor: pointer;
 }
+
+.container {
+  display: flex;
+  gap: 20px;
+}
+
+.formulario {
+  width: 40%;
+}
+
+.preview {
+  width: 60%;
+  background: #e5e5e5;
+  padding: 20px;
+  overflow: auto;
+}
+
+.pagina {
+  background: white;
+  width: 210mm;
+  height: 297mm;
+  margin: auto;
+  padding: 30mm;
+  font-family: "Times New Roman";
+  font-size: 12pt;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.nome,
+.titulo {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 40px;
+}
+
+.texto {
+  text-align: justify;
+  margin-top: 60px;
+  line-height: 1.5;
+}
+
+.data {
+  margin-top: 60px;
+}
+
+.banca {
+  margin-top: 50px;
+  text-align: center;
+  font-weight: bold;
+}
+
