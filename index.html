@@ -3,50 +3,57 @@
 <head>
   <meta charset="UTF-8">
   <title>Gerador de Folha de Aprovação</title>
+
+  <!-- CSS -->
   <link rel="stylesheet" href="style.css">
+
+  <!-- Bibliotecas PDF -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
 </head>
+
 <body>
 
-<h1>Gerador de Folha de Aprovação ABNT</h1>
+  <div class="container">
 
-<form id="form">
+    <!-- 🔹 COLUNA ESQUERDA: FORMULÁRIO -->
+    <div class="formulario">
 
-  <input type="text" id="nome" placeholder="Nome do aluno" required>
+      <!-- aqui fica SEU FORMULÁRIO -->
+      <!-- inputs, selects e botão -->
 
-  <input type="text" id="tituloTrabalho" placeholder="Título do trabalho" required>
+    </div>
 
-  <select id="tipo">
-    <option>Dissertação</option>
-    <option>Trabalho de Conclusão de Curso</option>
-  </select>
+    <!-- 🔹 COLUNA DIREITA: PRÉ-VISUALIZAÇÃO -->
+    <div class="preview" id="preview">
 
-  <select id="apresentada">
-    <option>Departamento de Letras Estrangeiras</option>
-  </select>
+      <div class="pagina">
 
-  <select id="campus">
-    <option>Campus Avançado de Assú</option>
-    <option>Campus Avançado de Caicó</option>
-  </select>
+        <p class="nome" id="pNome">NOME DO ALUNO</p>
 
-  <select id="titulo">
-    <option>Graduado</option>
-    <option>Mestre</option>
-    <option>Doutor</option>
-  </select>
+        <p class="titulo" id="pTitulo">TÍTULO DO TRABALHO</p>
 
-  <input type="text" id="curso" placeholder="Curso" required>
+        <p class="texto" id="pTexto">
+          Dissertação apresentada ao Departamento de Letras Estrangeiras, do
+          Campus Avançado de Assú da Universidade do Estado do Rio Grande do Norte,
+          como requisito parcial para obtenção do título de Mestre em Letras.
+        </p>
 
-  <input type="text" id="orientador" placeholder="Orientador(a)" required>
-  <input type="text" id="ex1" placeholder="Examinador(a) 1" required>
-  <input type="text" id="ex2" placeholder="Examinador(a) 2" required>
+        <p class="data" id="pData">Aprovada em: ___ / ___ / _____</p>
 
-  <input type="date" id="data" required>
+        <p class="banca">Banca Examinadora</p>
 
-  <button type="button" onclick="gerarPDF()">Baixar PDF</button>
+        <p id="pOrientador">Orientador</p>
+        <p id="pEx1">Examinador 1</p>
+        <p id="pEx2">Examinador 2</p>
 
-</form>
+      </div>
 
-<script src="script.js"></script>
+    </div>
+
+  </div>
+
+  <!-- JS -->
+  <script src="script.js"></script>
 </body>
 </html>
