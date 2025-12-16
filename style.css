@@ -237,7 +237,7 @@ button:hover {
 #pOrientador,
 #pEx1,
 #pEx2 {
-  margin-top: 12mm;
+  margin-top: 1mm;
   font-size: 12pt;
 }
 
@@ -250,7 +250,7 @@ button:hover {
 /* LINHA DE ASSINATURA */
 .linha {
   width: 60%;
-  margin: 0 auto 1mm auto;
+  margin: 0 auto 4mm auto;
   border-top: 1px solid #000;
 }
 
