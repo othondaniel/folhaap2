@@ -19,8 +19,57 @@
     <!-- 🔹 COLUNA ESQUERDA: FORMULÁRIO -->
     <div class="formulario">
 
-      <!-- aqui fica SEU FORMULÁRIO -->
-      <!-- inputs, selects e botão -->
+     <h2>Dados do Trabalho</h2>
+
+<label>Nome do aluno</label>
+<input type="text" id="nome" placeholder="Ex: Luiz Antônio de Lima">
+
+<label>Título do trabalho</label>
+<input type="text" id="tituloTrabalho" placeholder="Título do trabalho">
+
+<label>Tipo</label>
+<select id="tipo">
+  <option>Dissertação</option>
+  <option>Trabalho de Conclusão de Curso</option>
+</select>
+
+<label>Apresentada a</label>
+<select id="apresentada">
+  <option>Departamento de Letras Estrangeiras</option>
+</select>
+
+<label>Campus</label>
+<select id="campus">
+  <option>Campus Avançado de Assú</option>
+  <option>Campus Avançado de Caicó</option>
+</select>
+
+<label>Título obtido</label>
+<select id="titulo">
+  <option>Graduado</option>
+  <option>Mestre</option>
+  <option>Doutor</option>
+</select>
+
+<label>Curso</label>
+<input type="text" id="curso" placeholder="Ex: Letras">
+
+<label>Orientador(a)</label>
+<input type="text" id="orientador">
+
+<label>Examinador(a) 1</label>
+<input type="text" id="ex1">
+
+<label>Examinador(a) 2</label>
+<input type="text" id="ex2">
+
+<label>Data da aprovação</label>
+<input type="date" id="data">
+
+<button type="button" onclick="gerarPDF()">
+  Baixar PDF
+</button>
+
 
     </div>
 
