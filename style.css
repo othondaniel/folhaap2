@@ -1,49 +1,41 @@
-body {
-  font-family: Arial, sans-serif;
-  max-width: 600px;
-  margin: auto;
-}
-
-input, select, button {
-  width: 100%;
-  padding: 10px;
-  margin: 8px 0;
-}
-
-button {
-  background: #2563eb;
-  color: white;
-  border: none;
-  cursor: pointer;
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
 }
 
 .container {
   display: flex;
-  gap: 20px;
+  height: 100vh;          /* ocupa a tela inteira */
+  overflow: hidden;      /* evita scroll geral */
 }
 
 .formulario {
   width: 40%;
+  padding: 20px;
+  overflow-y: auto;      /* scroll só no formulário */
 }
 
 .preview {
   width: 60%;
   background: #e5e5e5;
   padding: 20px;
-  overflow: auto;
+  overflow: auto;        /* 🔥 scroll do preview */
 }
 
+/* FOLHA A4 */
 .pagina {
   background: white;
   width: 210mm;
   height: 297mm;
   margin: auto;
   padding: 30mm;
-  font-family: "Times New Roman";
+  font-family: "Times New Roman", serif;
   font-size: 12pt;
-  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  box-shadow: 0 0 10px rgba(0,0,0,0.25);
 }
 
+/* TEXTO */
 .nome,
 .titulo {
   text-align: center;
@@ -66,4 +58,5 @@ button {
   text-align: center;
   font-weight: bold;
 }
+
 
