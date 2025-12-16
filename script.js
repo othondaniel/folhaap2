@@ -83,3 +83,16 @@ ${tituloSelect.value} em ${cursoInput.value}.`;
   pEx2.textContent =
     ex2Input.value + " (Examinador)";
 }
+
+async function gerarPDF() {
+  const elemento = document.querySelector(".pagina");
+
+  const canvas = await html2canvas(elemento, { scale: 2 });
+
+  const imgData = canvas.toDataURL("image/png");
+
+  const pdf = new jspdf.jsPDF("p", "mm", "a4");
+  pdf.addImage(imgData, "PNG", 0, 0, 210, 297);
+  pdf.save("folha-aprovacao.pdf");
+}
+
