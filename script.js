@@ -7,9 +7,9 @@ const campusSelect = document.getElementById("campus");
 const tituloSelect = document.getElementById("titulo");
 const cursoInput = document.getElementById("curso");
 const dataInput = document.getElementById("data");
-const orientadorInput = document.getElementById("orientador");
-const ex1Input = document.getElementById("ex1");
-const ex2Input = document.getElementById("ex2");
+const assinaturaOrientador = document.getElementById("assinaturaOrientador");
+const assinaturaEx1 = document.getElementById("assinaturaEx1");
+const assinaturaEx2 = document.getElementById("assinaturaEx2");
 
 // ===== ELEMENTOS DO PREVIEW =====
 const pNome = document.getElementById("pNome");
@@ -43,20 +43,29 @@ ${tituloSelect.value} em ${cursoInput.value || "CURSO"}.`;
       ? "Aprovada em: " + dataInput.value.split("-").reverse().join("/")
       : "Aprovada em: ___ / ___ / _____";
 
-  pOrientador.textContent =
-    orientadorInput.value
-      ? orientadorInput.value + " (Orientador)"
-      : "Orientador";
-
-  pEx1.textContent =
-    ex1Input.value
-      ? ex1Input.value + " (Examinador)"
-      : "Examinador 1";
-
-  pEx2.textContent =
-    ex2Input.value
-      ? ex2Input.value + " (Examinador)"
-      : "Examinador 2";
+  // ORIENTADOR
+    if (orientadorInput.value) {
+      pOrientador.textContent = orientadorInput.value + " (Orientador)";
+      assinaturaOrientador.style.display = "block";
+    } else {
+      assinaturaOrientador.style.display = "none";
+    }
+    
+    // EXAMINADOR 1
+    if (ex1Input.value) {
+      pEx1.textContent = ex1Input.value + " (Examinador)";
+      assinaturaEx1.style.display = "block";
+    } else {
+      assinaturaEx1.style.display = "none";
+    }
+    
+    // EXAMINADOR 2
+    if (ex2Input.value) {
+      pEx2.textContent = ex2Input.value + " (Examinador)";
+      assinaturaEx2.style.display = "block";
+    } else {
+      assinaturaEx2.style.display = "none";
+    }
 }
 
 // ===== GERAR PDF A PARTIR DO PREVIEW =====
