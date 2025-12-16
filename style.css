@@ -190,6 +190,7 @@ button:hover {
   text-align: center;
   font-weight: bold;
   margin-top: 0;
+  font-size: 14pt;
 }
 
 /* TÍTULO DO TRABALHO */
@@ -197,12 +198,14 @@ button:hover {
   text-align: center;
   font-weight: bold;
   margin-top: 55mm;   /* 🔥 espaço correto */
+  font-size: 14pt;
 }
 
 /* TEXTO EXPLICATIVO */
 .texto {
   text-align: justify;
   margin-top: 45mm;   /* 🔥 respiração visual */
+  font-size: 12pt;
 
   width: 70%;
   margin-left: auto;
@@ -212,6 +215,7 @@ button:hover {
 /* DATA */
 .data {
   margin-top: 40mm;   /* 🔥 separa bem do texto */
+  font-size: 12pt;
 }
 
 /* TÍTULO "BANCA EXAMINADORA" */
@@ -219,6 +223,7 @@ button:hover {
   margin-top: 35mm;
   text-align: center;
   font-weight: bold;
+  font-size: 12pt;
 }
 
 /* NOMES DA BANCA */
@@ -226,6 +231,7 @@ button:hover {
 #pEx1,
 #pEx2 {
   margin-top: 12mm;
+  font-size: 12pt;
 }
 
 @media (max-width: 900px) {
