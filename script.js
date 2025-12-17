@@ -48,7 +48,7 @@ function atualizarPreview() {
   pTexto.textContent =
 `${tipoSelect.value} apresentada ao ${apresentadaSelect.value}, do
 ${campusSelect.value} da Universidade do Estado do Rio Grande do Norte,
-como requisito parcial para obtenção do título de
+como requisito parcial obrigatório para obtenção do título de
 ${tituloSelect.value} em ${cursoInput.value || "CURSO"}.`;
 
   pData.textContent =
