@@ -27,68 +27,81 @@
 
       <div class="card-form">
 
-    <h2>Gerador de Folha de Aprovação</h2>
+    <h2>
+      <i class="fa-solid fa-file-lines"></i>
+      Gerador de Folha
+    </h2>
     <p class="subtitulo">
       Preencha os dados para gerar a folha de aprovação (ABNT/UERN)
     </p>
       
-     <h3>Dados do Trabalho</h3>
+     <!-- SEÇÃO -->
+    <div class="bloco">
+      <h3>
+        <i class="fa-solid fa-user"></i>
+        Dados do Trabalho
+      </h3>
 
-<label>Nome do aluno</label>
-<input type="text" id="nome" placeholder="Ex: Luiz Antônio de Lima">
-
-<label>Título do trabalho</label>
-<input type="text" id="tituloTrabalho" placeholder="Título do trabalho">
-
-<label>Tipo</label>
-<select id="tipo">
-  <option>Dissertação</option>
-  <option>Trabalho de Conclusão de Curso</option>
-</select>
-
-<label>Apresentada a</label>
-<select id="apresentada">
-  <option>Departamento de Letras Estrangeiras</option>
-</select>
-
-<label>Campus</label>
-<select id="campus">
-  <option>Campus Avançado de Assú</option>
-  <option>Campus Avançado de Caicó</option>
-</select>
-
-<label>Título obtido</label>
-<select id="titulo">
-  <option>Graduado</option>
-  <option>Mestre</option>
-  <option>Doutor</option>
-</select>
-
-<label>Curso</label>
-<input type="text" id="curso" placeholder="Ex: Letras">
-
-<label>Data da aprovação</label>
-<input type="date" id="data">
+          <label>Nome do aluno</label>
+          <input type="text" id="nome" placeholder="Ex: Luiz Antônio de Lima">
+          
+          <label>Título do trabalho</label>
+          <input type="text" id="tituloTrabalho" placeholder="Título do trabalho">
+          
+          <label>Tipo</label>
+          <select id="tipo">
+            <option>Dissertação</option>
+            <option>Trabalho de Conclusão de Curso</option>
+          </select>
+          
+          <label>Apresentada a</label>
+          <select id="apresentada">
+            <option>Departamento de Letras Estrangeiras</option>
+          </select>
+          
+          <label>Campus</label>
+          <select id="campus">
+            <option>Campus Avançado de Assú</option>
+            <option>Campus Avançado de Caicó</option>
+          </select>
+          
+          <label>Título obtido</label>
+          <select id="titulo">
+            <option>Graduado</option>
+            <option>Mestre</option>
+            <option>Doutor</option>
+          </select>
+          
+          <label>Curso</label>
+          <input type="text" id="curso" placeholder="Ex: Letras">
+          
+          <label>Data da aprovação</label>
+          <input type="date" id="data">
         
-<h3>Dados da Banca</h3>
+     <!-- SEÇÃO -->
+    <div class="bloco">
+      <h3>
+        <i class="fa-solid fa-people-group"></i>
+        Banca Examinadora
+      </h3>
         
-<label>Orientador</label>
-<input type="text" id="orientador" placeholder="Nome do orientador">
-
-<label>Instituição do Orientador</label>
-<input type="text" id="instOrientador" placeholder="Universidade / Instituição">
-
-<label>Examinador 1</label>
-<input type="text" id="ex1" placeholder="Nome do examinador">
-
-<label>Instituição do Examinador 1</label>
-<input type="text" id="instEx1" placeholder="Universidade / Instituição">
-
-<label>Examinador 2</label>
-<input type="text" id="ex2" placeholder="Nome do examinador">
-
-<label>Instituição do Examinador 2</label>
-<input type="text" id="instEx2" placeholder="Universidade / Instituição">
+          <label>Orientador</label>
+          <input type="text" id="orientador" placeholder="Nome do orientador">
+          
+          <label>Instituição do Orientador</label>
+          <input type="text" id="instOrientador" placeholder="Universidade / Instituição">
+          
+          <label>Examinador 1</label>
+          <input type="text" id="ex1" placeholder="Nome do examinador">
+          
+          <label>Instituição do Examinador 1</label>
+          <input type="text" id="instEx1" placeholder="Universidade / Instituição">
+          
+          <label>Examinador 2</label>
+          <input type="text" id="ex2" placeholder="Nome do examinador">
+          
+          <label>Instituição do Examinador 2</label>
+          <input type="text" id="instEx2" placeholder="Universidade / Instituição">
         
 <button type="button" onclick="gerarPDF()">
   Baixar PDF
