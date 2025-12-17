@@ -16,6 +16,14 @@ const assinaturaOrientador = document.getElementById("assinaturaOrientador");
 const assinaturaEx1 = document.getElementById("assinaturaEx1");
 const assinaturaEx2 = document.getElementById("assinaturaEx2");
 
+const instOrientadorInput = document.getElementById("instOrientador");
+const instEx1Input = document.getElementById("instEx1");
+const instEx2Input = document.getElementById("instEx2");
+
+const pInstOrientador = document.getElementById("pInstOrientador");
+const pInstEx1 = document.getElementById("pInstEx1");
+const pInstEx2 = document.getElementById("pInstEx2");
+
 // ===== ELEMENTOS DO PREVIEW =====
 const pNome = document.getElementById("pNome");
 const pTitulo = document.getElementById("pTitulo");
@@ -49,28 +57,34 @@ ${tituloSelect.value} em ${cursoInput.value || "CURSO"}.`;
       : "Aprovada em: ___ / ___ / _____";
 
     // ORIENTADOR
-    if (orientadorInput.value.trim()) {
-      pOrientador.textContent = orientadorInput.value + " (Orientador)";
-      assinaturaOrientador.style.display = "block";
-    } else {
-      assinaturaOrientador.style.display = "none";
-    }
-    
-    // EXAMINADOR 1
-    if (ex1Input.value.trim()) {
-      pEx1.textContent = ex1Input.value + " (Examinador)";
-      assinaturaEx1.style.display = "block";
-    } else {
-      assinaturaEx1.style.display = "none";
-    }
-    
-    // EXAMINADOR 2
-    if (ex2Input.value.trim()) {
-      pEx2.textContent = ex2Input.value + " (Examinador)";
-      assinaturaEx2.style.display = "block";
-    } else {
-      assinaturaEx2.style.display = "none";
-    }
+      if (orientadorInput.value.trim()) {
+        pOrientador.textContent = orientadorInput.value + " (Orientador)";
+        pInstOrientador.textContent =
+          instOrientadorInput.value || "Universidade do Estado do Rio Grande do Norte";
+        assinaturaOrientador.style.display = "block";
+      } else {
+        assinaturaOrientador.style.display = "none";
+      }
+      
+      // EXAMINADOR 1
+      if (ex1Input.value.trim()) {
+        pEx1.textContent = ex1Input.value + " (Examinador)";
+        pInstEx1.textContent =
+          instEx1Input.value || "Universidade do Estado do Rio Grande do Norte";
+        assinaturaEx1.style.display = "block";
+      } else {
+        assinaturaEx1.style.display = "none";
+      }
+      
+      // EXAMINADOR 2
+      if (ex2Input.value.trim()) {
+        pEx2.textContent = ex2Input.value + " (Examinador)";
+        pInstEx2.textContent =
+          instEx2Input.value || "Universidade do Estado do Rio Grande do Norte";
+        assinaturaEx2.style.display = "block";
+      } else {
+        assinaturaEx2.style.display = "none";
+      }
 }
 
 // ===== GERAR PDF A PARTIR DO PREVIEW =====
