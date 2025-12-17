@@ -13,7 +13,7 @@ html, body {
 
 /* ================= FORMULÁRIO ================= */
 .formulario {
-  width: 30%;
+  width: 40%;
   background: linear-gradient(180deg, #f8fafc, #eef2f7);
   padding: 24px;
   overflow-y: auto;
