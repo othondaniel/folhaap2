@@ -249,7 +249,7 @@ html, body {
   }
 
   .pagina {
-    transform: scale(0.42);        /* 🔥 MINIATURA */
+    transform: scale(0.60);        /* 🔥 MINIATURA */
     transform-origin: top center;
 
     margin-bottom: -160mm;         /* 🔥 COMPENSA ALTURA */
