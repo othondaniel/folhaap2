@@ -28,9 +28,16 @@ html, body {
 
 /* TÍTULOS */
 .card-form h2 {
-  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
   font-size: 22px;
-  color: #111827;
+  color: #1e3a8a;
+}
+
+.card-form h2 i {
+  font-size: 26px;
+  color: #2563eb;
 }
 
 .subtitulo {
@@ -45,12 +52,18 @@ html, body {
 }
 
 .bloco h3 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
   font-size: 14px;
-  font-weight: 700;
+  font-weight: 600;
   color: #2563eb;
-  margin-bottom: 14px;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
+  margin-bottom: 16px;
+  text-transform: none; /* mais clean */
+}
+
+.bloco h3 i {
+  font-size: 16px;
 }
 
 /* GRID */
@@ -174,6 +187,22 @@ button:hover {
   background: #e5e5e5;
   padding: 20px;
   overflow: auto;        /* 🔥 scroll do preview */
+}
+
+/* CARD MINI BANCA */
+.card-mini {
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  padding: 16px;
+  margin-bottom: 20px;
+}
+
+.card-mini h4 {
+  margin: 0 0 12px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #1e3a8a;
 }
 
 /* FOLHA A4 */
