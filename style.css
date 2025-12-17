@@ -140,6 +140,11 @@ html, body {
   justify-content: center;
 }
 
+.preview-escala {
+  transform: scale(0.95);
+  transform-origin: top center;
+}
+
 /* ================= A4 ================= */
 .pagina {
   background: white;
