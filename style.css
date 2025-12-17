@@ -141,7 +141,7 @@ html, body {
 }
 
 .preview-escala {
-  transform: scale(0.95);
+  transform: scale(0.8);
   transform-origin: top center;
 }
 
