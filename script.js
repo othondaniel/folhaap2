@@ -100,5 +100,24 @@ async function gerarPDF() {
 
   const pdf = new jspdf.jsPDF("p", "mm", "a4");
   pdf.addImage(imgData, "PNG", 0, 0, 210, 297);
-  pdf.save("folha-de-aprovacao.pdf");
+
+  // ===== NOME DO ARQUIVO =====
+  let nomeDiscente = nomeInput.value.trim();
+
+  if (!nomeDiscente) {
+    nomeDiscente = "Sem nome";
+  }
+
+  // Remove caracteres inválidos para nome de arquivo
+  nomeDiscente = nomeDiscente
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "") // remove acentos
+    .replace(/[^a-zA-Z0-9 ]/g, "")   // remove caracteres especiais
+    .replace(/\s+/g, " ")            // espaços duplicados
+    .trim();
+
+  const nomeArquivo = `Folha de Aprovação - ${nomeDiscente}.pdf`;
+
+  pdf.save(nomeArquivo);
 }
+
