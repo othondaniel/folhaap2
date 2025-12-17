@@ -126,7 +126,13 @@ html, body {
 /* ================= PREVIEW ================= */
 .preview {
   width: 60%;
-  background: #e5e5e5;
+  background: repeating-linear-gradient(
+    45deg,
+    #e5e5e5,
+    #e5e5e5 10px,
+    #eaeaea 10px,
+    #eaeaea 20px
+  );
   padding: 40px 0;     /* só vertical */
   overflow: auto;
 
