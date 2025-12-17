@@ -125,7 +125,7 @@ html, body {
 
 /* ================= PREVIEW ================= */
 .preview {
-  width: 60%;
+  width: 50%;
   background: #e5e5e5;
   padding: 20px;
   overflow: auto;
