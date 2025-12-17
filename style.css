@@ -125,10 +125,13 @@ html, body {
 
 /* ================= PREVIEW ================= */
 .preview {
-  width: 50%;
+  width: 60%;
   background: #e5e5e5;
-  padding: 20px;
+  padding: 40px 0;     /* só vertical */
   overflow: auto;
+
+  display: flex;       /* 🔥 centraliza */
+  justify-content: center;
 }
 
 /* ================= A4 ================= */
@@ -137,11 +140,16 @@ html, body {
   width: 210mm;
   height: 297mm;
   padding: 30mm;
+
   font-family: "Times New Roman", serif;
   font-size: 12pt;
+
   box-shadow: 0 0 10px rgba(0,0,0,0.25);
+
   transform: scale(0.95);
-  transform-origin: top left;
+  transform-origin: top center;
+
+  margin: 0;           /* 🔥 remove sobra */
 }
 
 /* TEXTO A4 */
