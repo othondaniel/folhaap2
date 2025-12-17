@@ -31,4 +31,35 @@ com visualização em tempo real e exportação em PDF, seguindo padrões acadê
 1. Preencha os campos do formulário
 2. Visualize a folha de aprovação no painel de preview
 3. Clique em **Gerar PDF**
-4. O arquivo será salvo automaticamente como:
+4. O arquivo será salvo automaticamente como: Folha de Aprovação - Nome do Discente.pdf
+
+---
+
+## 💻 Executando o projeto localmente
+
+1. Faça o download ou clone este repositório
+2. Abra o arquivo `index.html` em qualquer navegador moderno
+3. Não é necessário servidor ou instalação adicional
+
+---
+
+## 📱 Observações sobre mobile
+
+- No celular, o preview da folha A4 é exibido com rolagem
+- O documento mantém proporção A4 real
+- O PDF gerado sempre mantém tamanho oficial A4
+
+---
+
+## ⚠️ Limitações conhecidas
+
+- O preview não é totalmente responsivo (documentos A4 não devem ser adaptados)
+- A qualidade do PDF depende do dispositivo (uso de `html2canvas`)
+- Recomenda-se gerar o PDF preferencialmente em desktop para melhor fidelidade
+
+---
+
+## 📄 Licença
+
+Este projeto é de uso acadêmico e educacional.
+Sinta-se livre para adaptar conforme a necessidade institucional.
