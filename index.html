@@ -94,23 +94,30 @@
         Banca Examinadora
       </h3>
         
-          <label>Orientador</label>
-          <input type="text" id="orientador" placeholder="Nome do orientador">
-          
-          <label>Instituição do Orientador</label>
-          <input type="text" id="instOrientador" placeholder="Universidade / Instituição">
-          
-          <label>Examinador 1</label>
-          <input type="text" id="ex1" placeholder="Nome do examinador">
-          
-          <label>Instituição do Examinador 1</label>
-          <input type="text" id="instEx1" placeholder="Universidade / Instituição">
-          
-          <label>Examinador 2</label>
-          <input type="text" id="ex2" placeholder="Nome do examinador">
-          
-          <label>Instituição do Examinador 2</label>
-          <input type="text" id="instEx2" placeholder="Universidade / Instituição">
+          <div class="card-mini">
+            <h4>Orientador(a)</h4>
+              <label>Nome</label>
+              <input type="text" id="orientador">
+            <label>Instituição</label>
+            <input type="text" id="instOrientador"
+                   value="Universidade do Estado do Rio Grande do Norte – UERN">
+          </div>
+
+          <div class="card-mini">
+            <label>Examinador 1</label>
+            <input type="text" id="ex1" placeholder="Nome do examinador">
+            
+            <label>Instituição do Examinador 1</label>
+            <input type="text" id="instEx1" placeholder="Universidade / Instituição">
+         </div>
+
+          <div class="card-mini">
+              <label>Examinador 2</label>
+              <input type="text" id="ex2" placeholder="Nome do examinador">
+              
+              <label>Instituição do Examinador 2</label>
+              <input type="text" id="instEx2" placeholder="Universidade / Instituição">
+           </div>
         
 <button type="button" onclick="gerarPDF()">
   Baixar PDF
