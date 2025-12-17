@@ -273,7 +273,7 @@ button:hover {
 
 /* BLOCO DE ASSINATURA */
 .assinatura {
-  margin-top: 15mm;
+  margin-top: 25mm;
   text-align: center;
 }
 
@@ -290,7 +290,7 @@ button:hover {
 
 .instituicao {
   font-size: 11pt;
-  margin-top: 2mm;
+  margin-top: 1mm;
 }
 
 @media (max-width: 900px) {
