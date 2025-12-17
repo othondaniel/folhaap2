@@ -247,7 +247,6 @@ button:hover {
   text-align: center;
 }
 
-/* LINHA DE ASSINATURA */
 .linha {
   width: 60%;
   margin: 0 auto 4mm auto;
@@ -259,6 +258,10 @@ button:hover {
   margin: 0;
 }
 
+.instituicao {
+  font-size: 11pt;
+  margin-top: 2mm;
+}
 
 @media (max-width: 900px) {
   .container {
