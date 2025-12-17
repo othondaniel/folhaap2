@@ -140,11 +140,6 @@ html, body {
   justify-content: center;
 }
 
-.preview-escala {
-  transform: scale(0.95);
-  transform-origin: top center;
-}
-
 /* ================= A4 ================= */
 .pagina {
   background: white;
@@ -234,9 +229,9 @@ html, body {
   }
 
   .container {
-    flex-direction: column;   /* 🔥 formulário em cima */
-    height: auto;             /* 🔥 REMOVE 100vh */
-    overflow: visible;        /* 🔥 permite scroll natural */
+    flex-direction: column;   /* formulário em cima */
+    height: auto;
+    overflow: visible;
   }
 
   .formulario,
@@ -245,22 +240,14 @@ html, body {
   }
 
   .preview {
-    width: 100%;
-    overflow: visible;
-  }
-
-  .preview-escala {
-    transform: scale(0.4);        /* 🔥 só visual */
-    transform-origin: top center;
-
-    margin-bottom: -160mm;        /* 🔥 compensa altura */
+    padding: 16px;
+    overflow-x: auto;         /* 🔥 scroll horizontal simples */
+    overflow-y: hidden;
   }
 
   .pagina {
-    transform: scale(0.60);        /* 🔥 MINIATURA */
-    transform-origin: top center;
-
-    margin-bottom: -160mm;         /* 🔥 COMPENSA ALTURA */
+    transform: none;          /* 🔥 garante A4 real */
+    margin: 0 auto;
   }
 
   .grid {
