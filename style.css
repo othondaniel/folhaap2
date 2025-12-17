@@ -154,6 +154,7 @@ html, body {
 
   transform: scale(0.95);
   transform-origin: top center;
+  aspect-ratio: 210 / 297;
 }
 
 /* TEXTO A4 */
@@ -240,14 +241,18 @@ html, body {
     width: 100%;
   }
 
-  .preview {
-    padding: 16px;
-    overflow-x: auto;         /* 🔥 scroll horizontal simples */
-    overflow-y: hidden;
+.preview {
+    display: block;      /* 🔥 remove flex */
+    padding: 8px;
+    overflow-x: auto;
+    overflow-y: auto;
   }
+}
 
   .pagina {
     transform: none;          /* 🔥 garante A4 real */
+    max-width: 210mm;
+    min-width: 210mm;
     margin: 0 auto;
   }
 
