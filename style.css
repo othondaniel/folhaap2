@@ -4,12 +4,14 @@ html, body {
   height: 100%;
 }
 
+/* ================= CONTAINER PRINCIPAL ================= */
 .container {
   display: flex;
-  height: 100vh;          /* ocupa a tela inteira */
-  overflow: hidden;      /* evita scroll geral */
+  height: 100vh;            /* desktop ok */
+  overflow: hidden;         /* desktop ok */
 }
 
+/* ================= FORMULÁRIO ================= */
 .formulario {
   width: 30%;
   background: linear-gradient(180deg, #f8fafc, #eef2f7);
@@ -42,8 +44,9 @@ html, body {
 
 .subtitulo {
   margin-top: 6px;
-  font-size: 14px;
+  font-size: 13px;
   color: #6b7280;
+  margin-bottom: 20px;
 }
 
 /* BLOCOS */
@@ -59,11 +62,6 @@ html, body {
   font-weight: 600;
   color: #2563eb;
   margin-bottom: 16px;
-  text-transform: none; /* mais clean */
-}
-
-.bloco h3 i {
-  font-size: 16px;
 }
 
 /* GRID */
@@ -71,60 +69,6 @@ html, body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 14px;
-}
-
-/* LABELS */
-label {
-  font-size: 13px;
-  font-weight: 600;
-  color: #374151;
-}
-
-/* INPUTS */
-input,
-select {
-  width: 100%;
-  padding: 12px 14px;
-  margin-top: 6px;
-  border-radius: 12px;
-  border: 1px solid #d1d5db;
-  font-size: 14px;
-  background: #f9fafb;
-  transition: all 0.2s ease;
-}
-
-input:focus,
-select:focus {
-  outline: none;
-  border-color: #2563eb;
-  background: #ffffff;
-  box-shadow: 0 0 0 3px rgba(37,99,235,0.15);
-}
-
-/* BOTÃO */
-button {
-  margin-top: 32px;
-  width: 100%;
-  padding: 16px;
-  border-radius: 14px;
-  border: none;
-  background: linear-gradient(135deg, #2563eb, #1e40af);
-  color: white;
-  font-size: 16px;
-  font-weight: 700;
-  cursor: pointer;
-  transition: all 0.2s ease;
-}
-
-button:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 12px 28px rgba(37,99,235,0.35);
-}
-
-.subtitulo {
-  font-size: 13px;
-  color: #6b7280;
-  margin-bottom: 20px;
 }
 
 /* LABELS */
@@ -136,24 +80,21 @@ button:hover {
   margin-top: 16px;
 }
 
-/* ===== CAMPOS DE FORMULÁRIO (PADRÃO ÚNICO) ===== */
+/* INPUTS / SELECT */
 .formulario input,
 .formulario select {
   width: 100%;
-  height: 48px;              /* 🔥 ALTURA FIXA */
-  padding: 0 14px;           /* padding horizontal apenas */
+  height: 48px;
+  padding: 0 14px;
+  margin-top: 6px;
   border-radius: 12px;
   border: 1px solid #d1d5db;
-
   font-size: 14px;
-  font-family: inherit;
-
   background: #f9fafb;
-  box-sizing: border-box;    /* 🔥 FUNDAMENTAL */
-  appearance: none;          /* 🔥 padroniza select */
+  box-sizing: border-box;
+  appearance: none;
 }
 
-/* FOCO */
 .formulario input:focus,
 .formulario select:focus {
   outline: none;
@@ -182,80 +123,56 @@ button:hover {
   box-shadow: 0 8px 20px rgba(37,99,235,0.3);
 }
 
+/* ================= PREVIEW ================= */
 .preview {
   width: 60%;
   background: #e5e5e5;
   padding: 20px;
-  overflow: auto;        /* 🔥 scroll do preview */
+  overflow: auto;
 }
 
-/* CARD MINI BANCA */
-.card-mini {
-  background: #f9fafb;
-  border: 1px solid #e5e7eb;
-  border-radius: 14px;
-  padding: 16px;
-  margin-bottom: 20px;
-}
-
-.card-mini h4 {
-  margin: 0 0 12px;
-  font-size: 15px;
-  font-weight: 600;
-  color: #1e3a8a;
-}
-
-/* FOLHA A4 */
+/* ================= A4 ================= */
 .pagina {
   background: white;
   width: 210mm;
   height: 297mm;
   padding: 30mm;
-
   font-family: "Times New Roman", serif;
   font-size: 12pt;
-
   box-shadow: 0 0 10px rgba(0,0,0,0.25);
-
-  /* 🔥 ZOOM VISUAL */
   transform: scale(0.95);
   transform-origin: top left;
 }
 
-/* NOME DO ALUNO */
+/* TEXTO A4 */
 .nome {
   text-align: center;
   font-weight: bold;
-  margin-top: 0;
   font-size: 14pt;
 }
 
-/* TÍTULO DO TRABALHO */
 .titulo {
   text-align: center;
   font-weight: bold;
-  margin-top: 55mm;   /* 🔥 espaço correto */
+  margin-top: 55mm;
   font-size: 14pt;
 }
 
-/* TEXTO EXPLICATIVO */
 .texto {
   text-align: justify;
-  margin-top: 45mm;   /* 🔥 respiração visual */
+  margin-top: 45mm;
   font-size: 18px;
-
   width: 50%;
   margin-left: auto;
   line-height: 1.5;
 }
 
-/* DATA */
 .data {
-  margin-top: 20mm;   /* 🔥 separa bem do texto */
+  margin-top: 20mm;
   font-size: 18px;
 }
 
-/* TÍTULO "BANCA EXAMINADORA" */
+/* BANCA */
 .banca {
   margin-top: 20mm;
   text-align: center;
@@ -263,7 +180,6 @@ button:hover {
   font-size: 18px;
 }
 
-/* NOMES DA BANCA */
 #pOrientador,
 #pEx1,
 #pEx2 {
@@ -271,7 +187,7 @@ button:hover {
   font-size: 18px;
 }
 
-/* BLOCO DE ASSINATURA */
+/* ASSINATURAS */
 .assinatura {
   margin-top: 20mm;
   text-align: center;
@@ -293,14 +209,33 @@ button:hover {
   margin-top: 1mm;
 }
 
+/* ================= MOBILE (CORREÇÃO REAL) ================= */
 @media (max-width: 900px) {
+
+  html, body {
+    height: auto;
+    overflow: auto;
+  }
+
   .container {
-    flex-direction: column;
+    flex-direction: column;   /* 🔥 formulário em cima */
+    height: auto;             /* 🔥 REMOVE 100vh */
+    overflow: visible;        /* 🔥 permite scroll natural */
   }
 
   .formulario,
   .preview {
     width: 100%;
+  }
+
+  .preview {
+    height: auto;
+    overflow: visible;        /* 🔥 iframe/pdf respeita fluxo */
+  }
+
+  .pagina {
+    transform: scale(0.85);
+    margin: 0 auto;
   }
 
   .grid {
