@@ -133,11 +133,16 @@ html, body {
     #eaeaea 10px,
     #eaeaea 20px
   );
-  padding: 40px 0;     /* só vertical */
+  padding: 24px 0;
   overflow: auto;
 
-  display: flex;       /* 🔥 centraliza */
+  display: flex;
   justify-content: center;
+}
+
+.preview-escala {
+  transform: scale(0.95);
+  transform-origin: top center;
 }
 
 /* ================= A4 ================= */
@@ -152,10 +157,7 @@ html, body {
 
   box-shadow: 0 0 10px rgba(0,0,0,0.25);
 
-  transform: scale(0.95);
-  transform-origin: top center;
-
-  margin: 0;           /* 🔥 remove sobra */
+  /* 🚫 NENHUM SCALE AQUI */
 }
 
 /* TEXTO A4 */
@@ -242,10 +244,16 @@ html, body {
     width: 100%;
   }
 
-.preview {
-    padding: 16px 0;
-    display: flex;
-    justify-content: center;
+  .preview {
+    width: 100%;
+    overflow: visible;
+  }
+
+  .preview-escala {
+    transform: scale(0.4);        /* 🔥 só visual */
+    transform-origin: top center;
+
+    margin-bottom: -160mm;        /* 🔥 compensa altura */
   }
 
   .pagina {
