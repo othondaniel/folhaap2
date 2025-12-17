@@ -152,7 +152,8 @@ html, body {
 
   box-shadow: 0 0 10px rgba(0,0,0,0.25);
 
-  /* 🚫 NENHUM SCALE AQUI */
+  transform: scale(0.95);
+  transform-origin: top center;
 }
 
 /* TEXTO A4 */
