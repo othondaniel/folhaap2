@@ -168,20 +168,7 @@ html, body {
   text-align: center;
   font-size: 14pt;
   font-weight: bold;
-  text-transform: uppercase;
-  margin-bottom: 4px; /* pequeno, pois subtítulo vem logo abaixo */
-}
-
-#doisPontos {
-  display: inline;
-}
-
-.subtitulo-trabalho {
-  text-align: center;
-  font-size: 14pt;
-  text-transform: uppercase;
-  margin-top: 0;
-  margin-bottom: 32px; /* separa do texto descritivo */
+  margin-bottom: 40px; /* espaço antes do texto descritivo */
 }
 
 .texto {
