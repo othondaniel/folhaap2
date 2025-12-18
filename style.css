@@ -7,8 +7,8 @@ html, body {
 /* ================= CONTAINER PRINCIPAL ================= */
 .container {
   display: flex;
-  height: 100vh;            /* desktop ok */
-  overflow: hidden;         /* desktop ok */
+  height: 100vh;            /* ocupa a tela inteira no desktop */
+  overflow: hidden;
 }
 
 /* ================= FORMULÁRIO ================= */
@@ -20,7 +20,7 @@ html, body {
   font-family: 'Poppins', sans-serif;
 }
 
-/* CARD PRINCIPAL */
+/* CARD PRINCIPAL DO FORMULÁRIO */
 .card-form {
   background: #ffffff;
   border-radius: 20px;
@@ -28,7 +28,7 @@ html, body {
   box-shadow: 0 20px 40px rgba(0,0,0,0.08);
 }
 
-/* TÍTULOS */
+/* TÍTULO PRINCIPAL DO FORMULÁRIO */
 .card-form h2 {
   display: flex;
   align-items: center;
@@ -42,6 +42,7 @@ html, body {
   color: #2563eb;
 }
 
+/* SUBTÍTULO DO FORMULÁRIO */
 .subtitulo {
   margin-top: 6px;
   font-size: 13px;
@@ -49,7 +50,7 @@ html, body {
   margin-bottom: 20px;
 }
 
-/* BLOCOS */
+/* ================= BLOCOS DO FORM ================= */
 .bloco {
   margin-top: 28px;
 }
@@ -64,7 +65,7 @@ html, body {
   margin-bottom: 16px;
 }
 
-/* GRID */
+/* GRID DE CAMPOS */
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -80,7 +81,7 @@ html, body {
   margin-top: 16px;
 }
 
-/* INPUTS / SELECT */
+/* INPUTS E SELECTS */
 .formulario input,
 .formulario select {
   width: 100%;
@@ -92,7 +93,6 @@ html, body {
   font-size: 14px;
   background: #f9fafb;
   box-sizing: border-box;
-  appearance: none;
 }
 
 .formulario input:focus,
@@ -103,7 +103,7 @@ html, body {
   background: #ffffff;
 }
 
-/* BOTÃO */
+/* BOTÃO PRINCIPAL */
 .formulario button {
   margin-top: 24px;
   width: 100%;
@@ -140,89 +140,88 @@ html, body {
   justify-content: center;
 }
 
-/* ================= A4 ================= */
+/* ================= PÁGINA A4 ================= */
 .pagina {
   background: white;
   width: 210mm;
   height: 297mm;
-  padding: 30mm;
-
+  padding: 30mm;                /* margem ABNT */
   font-family: "Times New Roman", serif;
   font-size: 12pt;
-
   box-shadow: 0 0 10px rgba(0,0,0,0.25);
 
-  transform: scale(0.95);
+  transform: scale(0.95);       /* preview confortável no desktop */
   transform-origin: top center;
-  aspect-ratio: 210 / 297;
 }
 
-/* TEXTO A4 */
+/* ================= CONTEÚDO DA FOLHA ================= */
+
+/* Nome do aluno */
 .nome {
   text-align: center;
   font-weight: bold;
   font-size: 14pt;
+  margin-top: 0;
 }
 
+/* Título do trabalho */
 .titulo {
   text-align: center;
   font-size: 14pt;
   font-weight: bold;
-  margin-bottom: 40px; /* espaço antes do texto descritivo */
+  margin-top: 24mm;             /* distância correta do nome */
+  margin-bottom: 40mm;          /* separação do texto descritivo */
 }
 
+/* Texto descritivo (lado direito) */
 .texto {
   text-align: justify;
-  margin-top: 40mm;
-  font-size: 18px;
+  font-size: 12pt;
   width: 50%;
-  margin-left: auto;
+  margin-left: auto;            /* empurra para a direita */
   line-height: 1.5;
 }
 
+/* Data de aprovação */
 .data {
   margin-top: 20mm;
-  font-size: 18px;
+  font-size: 12pt;
 }
 
-/* BANCA */
+/* ================= BANCA ================= */
 .banca {
   margin-top: 20mm;
   text-align: center;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 12pt;
 }
 
-#pOrientador,
-#pEx1,
-#pEx2 {
-  margin-top: 1mm;
-  font-size: 18px;
-}
-
-/* ASSINATURAS */
+/* Blocos de assinatura */
 .assinatura {
   margin-top: 20mm;
   text-align: center;
 }
 
+/* Linha da assinatura */
 .linha {
   width: 60%;
   margin: 0 auto 4mm auto;
   border-top: 1px solid #000;
 }
 
+/* Nome do membro da banca */
 .nome-banca {
-  font-size: 18px;
+  font-size: 12pt;
   margin: 0;
 }
 
+/* Instituição */
 .instituicao {
   font-size: 10pt;
   margin-top: 1mm;
 }
 
-/* ================= MOBILE (CORREÇÃO REAL) ================= */
+/* ================= MOBILE ================= */
 @media (max-width: 900px) {
 
   html, body {
@@ -233,7 +232,6 @@ html, body {
   .container {
     flex-direction: column;   /* formulário em cima */
     height: auto;
-    overflow: visible;
   }
 
   .formulario,
@@ -241,18 +239,14 @@ html, body {
     width: 100%;
   }
 
-.preview {
-    display: block;      /* 🔥 remove flex */
+  .preview {
+    display: block;
     padding: 8px;
-    overflow-x: auto;
-    overflow-y: auto;
+    overflow: auto;
   }
-}
 
   .pagina {
-    transform: none;          /* 🔥 garante A4 real */
-    max-width: 210mm;
-    min-width: 210mm;
+    transform: none;          /* remove escala */
     margin: 0 auto;
   }
 
