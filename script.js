@@ -5,8 +5,6 @@ const tipoSelect = document.getElementById("tipo");
 const apresentadaSelect = document.getElementById("apresentada");
 const campusSelect = document.getElementById("campus");
 const tituloSelect = document.getElementById("titulo");
-const subtituloInput = document.getElementById("subtituloTrabalho");
-const pSubtitulo = document.getElementById("pSubtitulo");
 const doisPontos = document.getElementById("doisPontos");
 const cursoInput = document.getElementById("curso");
 const dataInput = document.getElementById("data");
@@ -89,21 +87,6 @@ ${tituloSelect.value} em ${cursoInput.value || "CURSO"}.`;
         assinaturaEx2.style.display = "none";
       }
 }
-
-// ===== SUBTÍTULO =====
-subtituloInput.addEventListener("input", () => {
-  const valor = subtituloInput.value.trim();
-
-  if (valor !== "") {
-    pSubtitulo.textContent = valor.toUpperCase();
-    pSubtitulo.style.display = "block";
-    doisPontos.style.display = "inline";
-  } else {
-    pSubtitulo.textContent = "";
-    pSubtitulo.style.display = "none";
-    doisPontos.style.display = "none";
-  }
-});
 
 // ===== GERAR PDF A PARTIR DO PREVIEW =====
 async function gerarPDF() {
