@@ -44,7 +44,7 @@ function atualizarPreview() {
     nomeInput.value.toUpperCase() || "NOME DO ALUNO";
 
   pTitulo.textContent =
-    tituloTrabalhoInput.value.toUpperCase() || "TÍTULO DO TRABALHO";
+    tituloTrabalhoInput.value || "TÍTULO DO TRABALHO";
 
   pTexto.textContent =
 `${tipoSelect.value} apresentada ao ${apresentadaSelect.value}, do
