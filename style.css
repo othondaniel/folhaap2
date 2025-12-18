@@ -169,7 +169,7 @@ html, body {
   text-align: center;
   font-size: 14pt;
   font-weight: bold;
-  margin-top: 24mm;             /* distância correta do nome */
+  margin-top: 30mm;             /* distância correta do nome */
   margin-bottom: 40mm;          /* separação do texto descritivo */
 }
 
@@ -190,7 +190,7 @@ html, body {
 
 /* ================= BANCA ================= */
 .banca {
-  margin-top: 25mm;
+  margin-top: 30mm;
   text-align: center;
   font-weight: bold;
   font-size: 12pt;
